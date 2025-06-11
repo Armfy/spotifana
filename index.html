@@ -13,11 +13,10 @@
 <body class="min-vh-100 d-flex flex-column">
   <header class="bg-primary text-white text-center py-4">
     <div class="container">
-      <h1 class="display-4 fw-bold">Les musiques du Rahim</h1>
-      <p class="lead">BMW ON TOP</p>
+      <h1 class="display-4 fw-bold">les musiques du Rahim</h1>
+      <p class="lead">Une voiture est un meilleur investissement qu'une maison... Enfin ça dépend, faut juste que ce soit pas un 1.2L PureTech</p>
     </div>
   </header>
-
 
   <main class="flex-grow-1">
     <div class="container py-4">
@@ -34,7 +33,7 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="card shadow-sm h-100">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header bg-success text-white">
               <h2 class="fs-4 m-0 fw-bold">Distribution des Genres</h2>
             </div>
             <div class="card-body">
@@ -43,18 +42,37 @@
           </div>
         </div>
       </div>
-      <div class="row mt-4">
-       <div class="col-12">
-        <div class="card shadow-sm h-100">
-          <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap gap-2">
+      
+      <div class="row mt-4 d-md-none">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-info text-white d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+              <h2 class="fs-4 m-0 fw-bold">Liste des Morceaux</h2>
+              <div class="input-group input-group-sm rounded-pill w-100 w-sm-auto" style="max-width: 300px;">
+                <span class="input-group-text bg-white border-end-0 rounded-start-pill">
+                  <i class="bi bi-search"></i>
+                </span>
+                <input type="text" id="searchInputMobile" class="form-control border-start-0 rounded-end-pill" placeholder="Rechercher..." />
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div id="songCardContainer" class="list-group list-group-flush"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-4 d-none d-md-flex">
+        <div class="col-12">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-info text-white d-flex justify-content-between align-items-center flex-wrap gap-2">
               <h2 class="fs-4 m-0 fw-bold">Liste des Morceaux</h2>
               <div class="d-flex align-items-center gap-2">
-                <span class="badge bg-light text-primary" id="songCount">0</span>
-                <div class="input-group input-group-sm" style="width: 200px;">
-                  <span class="input-group-text bg-white text-primary">
+                <div class="input-group input-group-sm rounded-pill" style="width: 200px;">
+                  <span class="input-group-text bg-white border-end-0 rounded-start-pill">
                     <i class="bi bi-search"></i>
                   </span>
-                  <input type="text" id="searchInput" class="form-control" placeholder="Rechercher..." />
+                  <input type="text" id="searchInput" class="form-control border-start-0 rounded-end-pill" placeholder="Rechercher..." />
                 </div>
               </div>
             </div>
